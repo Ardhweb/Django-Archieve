@@ -1,0 +1,14 @@
+Make new ssl 
+
+
+New-SelfSignedCertificate -Subject "newhost" -TextExtension @("2.5.29.17={text}DNS=127.0.0.1:&IPAddress=127.0.0.1&IPAddress=::8000")
+powershell command :
+
+
+New-SelfSignedCertificate -Subject "localhost" -TextExtension @("2.5.29.17={text}DNS=localhost&IPAddress=127.0.0.1&IPAddress=::1")
+
+
+
+For CyWin64
+
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt
