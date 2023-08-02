@@ -1,0 +1,4 @@
+How Can we Created Nested Serliazer and combined two related models that connetced with foreign key and show their data with nested dict and using
+updated method with current instance so foreignkey fields add after creating one model objects with help of create/post method and using current instance to copy
+first model data and using them to update current model and getting id from their and add that object id and other fields on second model so they connected and new nested objects created 
+by post method
